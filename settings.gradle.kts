@@ -23,3 +23,4 @@ rootProject.name = "kcp-sampe"
 include(":app")
 include(":functionrecordable-compiler")
 include(":functionrecordable-core")
+include(":functionrecordable-gradle-plugin")
