@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.github.kintogotahasegawa.functionrecordable_core.Recordable
 import com.github.kintogotahasegawa.kcp_sampe.ui.theme.KcpsampeTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,13 +22,18 @@ class MainActivity : ComponentActivity() {
             KcpsampeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "Android",
+                        name = getScreenString(),
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
             }
         }
     }
+}
+
+@Recordable
+fun getScreenString(): String {
+    return "Screen Sample String"
 }
 
 @Composable

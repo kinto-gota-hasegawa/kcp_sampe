@@ -1,5 +1,6 @@
 package com.github.kintogotahasegawa.funtionrecordable_compiler.declaration
 
+import com.github.kintogotahasegawa.funtionrecordable_compiler.declaration.declaration.RecordableAnnotationDeclaration
 import org.jetbrains.kotlin.backend.common.extensions.IrGenerationExtension
 import org.jetbrains.kotlin.backend.common.extensions.IrPluginContext
 import org.jetbrains.kotlin.ir.declarations.IrModuleFragment
@@ -14,6 +15,8 @@ class FunctionRecordableIrGenerationExtension: IrGenerationExtension {
     private fun createFunctionRecordableIrElementTransformer(
         pluginContext: IrPluginContext
     ): FunctionRecordableIrElementTransformer {
-        return FunctionRecordableIrElementTransformer()
+        return FunctionRecordableIrElementTransformer(
+            recordableDeclaration = RecordableAnnotationDeclaration()
+        )
     }
 }

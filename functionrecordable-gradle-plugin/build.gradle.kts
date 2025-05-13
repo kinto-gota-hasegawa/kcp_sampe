@@ -9,10 +9,10 @@ dependencies {
 
 gradlePlugin {
     plugins {
-        create("functionrecordable") {
-            id = "com.github.kintogotahasegawa.functionrecordable_gradle_plugin"
+        create("recordable") {
+            id = "com.github.kintogotahasegawa.recordable"
             implementationClass =
-                "com.github.kintogotahasegawa.functionrecordable_gradle_plugin.FunctionRecordableGradlePlugin"
+                "com.github.kintogotahasegawa.functionrecordable_gradle_plugin.FunctionRecordableCompilerPluginSupportPlugin"
         }
     }
 }
