@@ -1,4 +1,4 @@
-package com.github.kintogotahasegawa.funtionrecordable_compiler
+package com.github.kintogotahasegawa.funtionrecordable_compiler.declaration
 
 import com.google.auto.service.AutoService
 import org.jetbrains.kotlin.backend.common.extensions.IrGenerationExtension

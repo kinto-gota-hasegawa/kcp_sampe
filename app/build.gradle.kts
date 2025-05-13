@@ -61,5 +61,5 @@ dependencies {
 }
 
 tasks.withType(KotlinCompile::class).all {
-    dependsOn(":funtionrecordable-compiler:publishToMavenLocal")
+    dependsOn(":functionrecordable-compiler:publishToMavenLocal")
 }

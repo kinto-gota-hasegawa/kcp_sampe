@@ -1,4 +1,4 @@
-package com.github.kintogotahasegawa.funtionrecordable_compiler
+package com.github.kintogotahasegawa.funtionrecordable_compiler.declaration
 
 import org.jetbrains.kotlin.ir.visitors.IrElementTransformerVoid
 
