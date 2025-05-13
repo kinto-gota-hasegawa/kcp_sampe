@@ -1,0 +1,4 @@
+package com.github.kintogotahasegawa.functionrecordable_gradle_plugin
+
+class FunctionRecordableCompilerPluginSupportPlugin {
+}
